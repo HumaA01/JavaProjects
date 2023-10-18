@@ -55,12 +55,5 @@ public class App
         return recordsArray;
 
     }
-
-    public static void assignmentPractice()
-    {
-        int var1=0, var2=0;
-        var1 = 50;
-        var2 = var1 + 10;
-        System.out.println(var2);
-    }
+    
 }
