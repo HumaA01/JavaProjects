@@ -9,16 +9,13 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 public class App
 {
-    public static void main(String[] args) throws IOException {
-
-        //assignmentStuff();
+    public static void main(String[] args) throws IOException
+    {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("How many records would you like to add?");
         int arrayLength = Integer.parseInt(reader.readLine());
         String[] recordsArray = new String[arrayLength];
-
         recordsArray = fillArray(recordsArray, arrayLength); //Calling fillArray Method
-
         System.out.println("Would you like to view the records? (Y/N)");
         String response = reader.readLine();
 
@@ -26,15 +23,12 @@ public class App
         {
             System.out.println(Arrays.toString(recordsArray)+ "\n");
             System.out.println("okay bye!");
-
         }
         else
         {
             System.out.println("okay bye!");
         }
-
     }
-
     public static String[] fillArray(String[] recordsArray, int arrayLength) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("This is a method test");
@@ -50,9 +44,6 @@ public class App
 
             System.out.println("Added Record " + (i + 1)+ "\n");
         }
-
-
-
         return recordsArray;
 
     }
