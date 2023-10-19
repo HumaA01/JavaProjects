@@ -11,6 +11,7 @@ public class App
 {
     public static void main(String[] args) throws IOException {
 
+        //assignmentStuff();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("How many records would you like to add?");
         int arrayLength = Integer.parseInt(reader.readLine());
@@ -55,5 +56,19 @@ public class App
         return recordsArray;
 
     }
-    
+
+    public static void assignmentStuff()
+    {
+        long l = 123L;
+        int i = 22;
+        int smallBox = (int)l;
+        System.out.println(smallBox);
+        double d = 1.25;
+        float f1 = (float)d;
+
+        byte b = 2, b1 = 3, b2 = 0;
+        b2 = (byte) (b1 + b2);
+
+    }
+
 }
